@@ -1,0 +1,116 @@
+body {
+    background-color:#ffffff;
+    background-image: url('plain.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #a11d33; /* Default text color */
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+}
+
+
+a {
+    color: #a11d33; 
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: #38040e;
+    text-decoration: underline;
+}
+
+
+h1 {
+    color: #38040e; 
+    font-size: 36px;
+    margin: 24px 0 8px;
+}
+h2 {
+    color: #a4133c; 
+    font-size: 28px;
+    margin: 16px 0 8px;
+}
+
+
+.left-text {
+  text-align: left;
+}
+
+.my-button {
+  background-color: #edede9; /* Button color */
+  color: #a11d33;              /* Text color */
+  padding: 10px 20px;       /* Space inside the button */
+  border: none;             /* Remove default border */
+  border-radius: 5px;       /* Rounded corners */
+  cursor: pointer;          /* Change mouse to hand icon on hover */
+  font-size: 16px;          /* Size of the text */
+  transition: 0.3s;         /* Smooth animation for effects */
+  text-decoration: none;    /* Removes underline if using <a> tag */
+  display: inline-block;    /* Ensures proper sizing for links */
+}
+
+/* Hover effect: changes color when the mouse is over the button */
+.my-button:hover {
+  background-color: #ffe5ec;
+}
+
+
+.container {
+	padding: 2rem;
+}
+
+.slider-wrapper {
+	position: relative;
+	max-width: 48rem;
+	margin: 0 auto;
+}
+
+.slider {
+	display: flex;
+	aspect-ratio: 16 / 9;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+	border-radius: 0.5rem;
+	-ms-overflow-style: none; /* Hide scrollbar IE and Edge */
+	scrollbar-width: none; /* Hide scrollbar Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.slider::-webkit-scrollbar {
+	display: none;
+}
+
+.slider img {
+	flex: 1 0 100%;
+	scroll-snap-align: start;
+	object-fit: cover;
+}
+
+.slider-nav {
+	display: flex;
+	column-gap: 1rem;
+	position: absolute;
+	bottom: 1.25rem;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+}
+
+.slider-nav a {
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	background-color: #fff;
+	opacity: 0.75;
+	transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+	opacity: 1;
+}
