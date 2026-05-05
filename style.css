@@ -114,3 +114,11 @@ h2 {
 .slider-nav a:hover {
 	opacity: 1;
 }
+
+.row {
+  display: flex;
+}
+.column {
+  flex: 50%; /* Makes both columns take up equal half of the width */
+  padding: 10px;
+}
